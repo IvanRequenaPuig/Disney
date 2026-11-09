@@ -1,0 +1,23 @@
+Imágenes de la página del Parque Disneyland. Guarda aquí estos archivos:
+hero.jpg
+mapa.jpg
+banner-noche.jpg
+restaurantes.jpg
+tiendas.jpg
+temporadas.jpg
+entradas.jpg
+dias-visita.jpg
+atraccion-1.jpg
+atraccion-2.jpg
+atraccion-3.jpg
+atraccion-4.jpg
+atraccion-5.jpg
+atraccion-6.jpg
+espectaculo-1.jpg
+espectaculo-2.jpg
+espectaculo-3.jpg
+personaje-1.jpg
+personaje-2.jpg
+personaje-3.jpg
+
+(mapa.jpg es una copia de tu mapa de prueba. Si cambias un nombre, actualízalo en src/config/images.js)

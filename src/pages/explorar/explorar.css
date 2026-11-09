@@ -1,0 +1,80 @@
+/* Página "Explorar Disneyland Paris" (lista de atracciones, restaurantes, espectáculos...) */
+#explorar { font-family: 'Segoe UI', system-ui, sans-serif; color: #1c2340; background: #f7f7f7; min-height: 100vh; overflow-x: hidden }
+#explorar a { text-decoration: none }
+.ex-main { max-width: 980px; margin: 0 auto; padding: 14px 16px 60px }
+
+/* Migas de pan + título + Lista/Mapa */
+.ex-crumb { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .72rem; margin-bottom: 4px }
+.ex-crumb a, .ex-crumb em { color: #1c2340; font-style: normal } .ex-crumb span { color: #1c2340; font-size: .9rem }
+.ex-titlebar { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 14px }
+.ex-titlebar h1 { font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 300; margin: 0; color: #1c2340 }
+.ex-view { display: flex; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,.25) }
+.ex-view button { border: 0; background: #1c3b78; color: #fff; padding: 9px 20px; font-size: .78rem; font-weight: 600; cursor: pointer; transition: background .15s }
+.ex-view button + button { border-left: 1px solid rgba(255,255,255,.3) }
+.ex-view button.on { background: #0b6fc2 } .ex-view button:hover { background: #0b5aa0 }
+
+.ex-card { background: #fff; border-radius: 14px; box-shadow: 0 2px 8px rgba(30,40,90,.08); margin-bottom: 14px }
+
+/* Barra de ubicación / tipo / buscador */
+.ex-bar { display: flex; align-items: center; gap: 0; padding: 12px 16px; position: relative; z-index: 5 }
+.ex-dd { position: relative }
+.ex-dd-btn { display: flex; align-items: center; gap: 12px; width: 100%; background: none; border: 0; cursor: pointer; font: inherit; color: #1c2340; text-align: left; padding: 6px 4px }
+.ex-dd-t { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.15rem }
+.ex-car { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 8px solid #8a93a6; transition: transform .2s; flex: none }
+.ex-dd.open > .ex-dd-btn .ex-car { transform: rotate(180deg); border-top-color: #1b8fd8 }
+.ex-dd.open > .ex-dd-btn .ex-dd-t { color: #1b8fd8 }
+.ex-circ { width: 34px; height: 34px; border-radius: 50%; background: #1c2f6b; display: grid; place-items: center; font-size: 1rem; flex: none }
+.ex-circ2 { font-size: 1.6rem; flex: none; line-height: 1 }
+.ex-loc { width: 300px; padding-right: 14px } .ex-tipo { width: 300px; padding: 0 14px; border-left: 1px solid #e3e6ee }
+.ex-search { flex: 1; margin-left: 14px; border: 1px solid #c9ced9; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,.18); display: flex; align-items: center; gap: 6px; padding: 0 10px; height: 30px; background: #fff }
+.ex-search input { border: 0; outline: 0; flex: 1; font: italic .8rem inherit; background: transparent; min-width: 0 } .ex-search span { font-size: .75rem; opacity: .6 }
+
+/* Desplegables */
+.ex-pop { display: none; position: absolute; left: 0; top: calc(100% + 4px); background: #fff; border-radius: 6px; box-shadow: 0 6px 18px rgba(20,30,70,.28); z-index: 30; min-width: 100% }
+.ex-dd.open > .ex-pop { display: block }
+.ex-pop-in { max-height: 300px; overflow-y: auto; padding: 8px 18px 6px; scrollbar-width: thin; scrollbar-color: #6b7a99 transparent }
+.ex-pop-loc { width: 300px } .ex-pop-loc h4 { font-size: .82rem; font-weight: 700; margin: 14px 0 6px } .ex-pop-loc h4:first-child { margin-top: 6px }
+.ex-pop-tipo { list-style: none; margin: 0; padding: 4px 0; width: 300px }
+.ex-opt { display: flex; align-items: center; gap: 8px; width: 100%; padding: 7px 10px; border: 0; background: none; font: inherit; font-size: .85rem; color: #1c2340; cursor: pointer; text-align: left }
+.ex-opt:hover { background: #e8f3fb } .ex-opt.sel { background: #1b8fd8; color: #fff } .ex-opt span { width: 22px; text-align: center }
+.ex-chk { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0; font-size: .85rem; color: #4a5269; cursor: pointer; line-height: 1.3 }
+.ex-chk input { appearance: none; -webkit-appearance: none; flex: none; width: 17px; height: 17px; border: 1.5px solid #9aa3b5; border-radius: 4px; margin-top: 1px; cursor: pointer; display: grid; place-items: center; background: #fff }
+.ex-chk input:checked { background: #5aa820; border-color: #5aa820 } .ex-chk input:checked::after { content: '✓'; color: #fff; font-size: .72rem; font-weight: 700 }
+.ex-chk.off { opacity: .45; cursor: default } .ex-chk.off input { cursor: default; background: #e8eaf0 }
+.ex-reset { display: block; width: 100%; text-align: left; border: 0; border-top: 1px solid #e3e6ee; background: #fff; padding: 9px 18px; font: inherit; font-size: .78rem; color: #1c2340; cursor: pointer; border-radius: 0 0 6px 6px }
+.ex-reset:hover { color: #0b6fc2 } .ex-borrar { color: #8a93a6 } .ex-borrar em { color: #1b8fd8 }
+
+/* Resultados */
+.ex-res { overflow: visible }
+.ex-count { padding: 18px 20px; font-size: .88rem; border-bottom: 1px solid #eef0f4 }
+.ex-filters { display: flex; align-items: stretch; background: #e6f1f9; border-top: 1px solid #d4e4f1; border-bottom: 1px solid #d4e4f1; position: relative; z-index: 4 }
+.ex-filters > b { font-size: 1.1rem; font-weight: 600; padding: 14px 18px; display: flex; align-items: center }
+.ex-fg { flex: 0 1 190px; border-left: 1px solid #d4e4f1 } .ex-fg:last-child { flex-basis: 220px }
+.ex-fg .ex-dd-btn { height: 100%; padding: 8px 12px; gap: 6px } .ex-fg .ex-dd-t { font-size: .78rem; font-weight: 700; white-space: normal; line-height: 1.2 }
+.ex-fg .ex-car { border-left-width: 6px; border-right-width: 6px; border-top-width: 7px }
+.ex-fg .ex-pop { min-width: 250px; border-radius: 0 0 8px 8px; top: 100% }
+.ex-sort { display: flex; justify-content: flex-end; align-items: center; gap: 10px; padding: 12px 16px; font-size: .75rem; font-weight: 700; border-bottom: 1px solid #eef0f4 }
+.ex-sort select { border: 1px solid #c9ced9; border-radius: 6px; padding: 4px 8px; font-size: .8rem; font-weight: 400; background: #f4f9fd; color: #1c2340; box-shadow: 0 1px 3px rgba(0,0,0,.12) }
+.ex-empty { text-align: center; padding: 40px 16px; color: #5b6580 }
+
+.ex-row { display: flex; align-items: center; gap: 20px; padding: 20px; border-bottom: 1px solid #e6e8ee; color: inherit; transition: background .15s }
+.ex-row:last-child { border-bottom: 0; border-radius: 0 0 14px 14px } .ex-row:hover { background: #f5f9fd }
+.ex-img { width: 180px; height: 100px; flex: none; background-image: var(--img, none), linear-gradient(135deg, #5a8fd8, #b07be0); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 2px }
+.ex-info { flex: 1; min-width: 0 } .ex-info h2 { font-size: 1.45rem; font-weight: 500; margin: 0 0 10px; color: #1c2340 }
+.ex-info p { font-size: .72rem; margin: 0 0 8px; color: #1c2340; line-height: 1.4 }
+.ex-chev { width: 11px; height: 11px; border-top: 3px solid #9aa3b5; border-right: 3px solid #9aa3b5; transform: rotate(45deg); margin: 0 14px; flex: none }
+
+/* Vista Mapa */
+.ex-mapview { display: grid; grid-template-columns: 300px 1fr; gap: 0; align-items: start }
+.ex-list-s { max-height: 640px; overflow-y: auto; border-right: 1px solid #e6e8ee }
+.ex-row-s { padding: 12px 16px } .ex-row-s .ex-info h2 { font-size: .95rem; margin: 0 0 4px } .ex-row-s .ex-info p { margin: 0 }
+.ex-maps { padding: 16px; display: grid; gap: 16px } .ex-maps figure { margin: 0 } .ex-maps figcaption { font-weight: 700; margin-bottom: 6px }
+.ex-maps img { width: 100%; border-radius: 8px; border: 1px solid #e3e6ee; background: #eef2f8; min-height: 120px }
+
+@media (max-width: 860px) {
+  .ex-bar { flex-wrap: wrap; row-gap: 8px } .ex-loc, .ex-tipo { width: 100%; border-left: 0; padding: 0 } .ex-search { flex: 1 1 100%; margin: 4px 0 0 }
+  .ex-pop-loc, .ex-pop-tipo { width: 100% }
+  .ex-filters { flex-wrap: wrap } .ex-filters > b { width: 100% } .ex-fg, .ex-fg:last-child { flex: 1 1 45%; border-top: 1px solid #d4e4f1 } .ex-fg .ex-pop { min-width: 240px; max-width: 86vw }
+  .ex-row { gap: 12px; padding: 14px } .ex-img { width: 110px; height: 72px } .ex-info h2 { font-size: 1.1rem; margin-bottom: 6px } .ex-chev { margin: 0 4px }
+  .ex-mapview { grid-template-columns: 1fr } .ex-list-s { max-height: 260px; border-right: 0; border-bottom: 1px solid #e6e8ee }
+}

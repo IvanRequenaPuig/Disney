@@ -1,0 +1,30 @@
+Guarda aquí las imágenes de esta carpeta con estos nombres:
+hero.jpg
+plan1.jpg
+plan2.jpg
+plan3.jpg
+exp1.jpg
+exp2.jpg
+exp3.jpg
+hotel1.jpg
+hotel2.jpg
+hotel3.jpg
+hotel4.jpg
+hotel5.jpg
+hotel6.jpg
+day1.jpg
+day2.jpg
+day3.jpg
+day4.jpg
+w1.jpg
+w2.jpg
+w3.jpg
+w4.jpg
+w5.jpg
+w6.jpg
+w7.jpg
+access.jpg
+app.jpg
+news.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

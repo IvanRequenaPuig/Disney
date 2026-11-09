@@ -1,0 +1,67 @@
+#hoteles { font-family: 'Segoe UI', system-ui, sans-serif; color: #1c2340; background: #f6f6f6; min-height: 100vh }
+#hoteles .logo { display: block; text-decoration: none; text-align: center } #hoteles .logo small { display: block; font: 600 .5rem sans-serif; letter-spacing: .5em; color: #888 }
+#hoteles .logo-img { height: 40px; display: block; margin: 0 auto }
+#hoteles .btn-dl { display: inline-block; background: linear-gradient(90deg, #0033cc, #0a5cff); color: #fff; border: 0; border-radius: 30px; padding: .5rem 1.3rem; font-weight: 700; font-size: .85rem; cursor: pointer; transition: transform .15s, filter .15s }
+#hoteles .btn-dl:hover { transform: translateY(-2px); filter: brightness(1.15) }
+#hoteles a { color: #0033cc }
+.h-head { background: #fff; padding-bottom: 16px; border-bottom: 1px solid #e5e5e5 }
+.stepper { list-style: none; display: flex; width: max-content; gap: 6px; margin: 14px auto 0; padding: 4px 10px; border: 1px solid #e3e3e3; border-radius: 30px; box-shadow: 0 1px 4px rgba(0,0,0,.08); font-size: .75rem }
+.stepper li { display: flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 20px; color: #555 } .stepper li.on { font-weight: 700; text-decoration: underline; color: #1c2340; background: #fff }
+.stepper b { width: 20px; height: 20px; border-radius: 50%; background: #4a5568; color: #fff; display: grid; place-items: center; font-size: .7rem } .stepper .on b { background: #0a5cff }
+.h-bar { background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); padding: 14px 20px }
+.h-bar-row { display: flex; justify-content: center; align-items: center; gap: 16px }
+.h-dates { display: flex; border-radius: 10px; box-shadow: 0 1px 5px rgba(0,0,0,.12); border-bottom: 4px solid #0033cc } .h-dates div { padding: 6px 14px; min-width: 150px } .h-dates small, .h-guests strong { display: block } .h-dates strong { font-size: .9rem } .h-dates small { text-transform: capitalize; font-size: .75rem }
+.h-guests strong { font-size: .75rem }
+.h-mod { border: 0; background: #f0f1f4; border-radius: 30px; padding: 8px 22px; color: #0033cc; font-weight: 700 } .h-mod i { font-style: normal; display: inline-block; transition: transform .2s } .h-mod.open i { transform: rotate(180deg) }
+.h-panel { max-width: 1180px; margin: 20px auto 6px } .h-panel label { font-weight: 700; font-size: .8rem }
+.h-wrap { max-width: 1200px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: 1fr 290px; gap: 28px }
+@media (max-width: 991px) { .h-wrap { grid-template-columns: 1fr } .hcard { grid-template-columns: 1fr !important } }
+#hoteles h1 { font-weight: 800; font-size: 2rem } #hoteles h2 { font-weight: 700; font-size: 1.4rem; margin: 1.2rem 0 .8rem } .tiny { font-size: .7rem }
+.h-cmp { display: flex; align-items: center; gap: 18px; background: #fff; border-radius: 10px; padding: 8px; margin-bottom: 22px; box-shadow: 0 1px 4px rgba(0,0,0,.08) } .h-cmp strong { flex: 1 }
+.h-cmp-img { width: 80px; height: 80px; border-radius: 12px; display: block; flex: none }
+.h-cmp-ico { width: 80px; height: 80px; border-radius: 12px; background: #3a1c78; display: grid; place-items: center; font-size: 2rem } .h-cmp-ico.assoc { background: #a52c63 } .h-cmp a { padding-right: 14px; font-size: .85rem }
+.hcard { display: grid; grid-template-columns: 290px 1fr; border-radius: 16px; overflow: hidden; margin-bottom: 24px; background: linear-gradient(120deg, var(--c), color-mix(in srgb, var(--c) 40%, #fff)); box-shadow: 0 2px 10px rgba(0,0,0,.15) }
+.hs { position: relative; min-height: 280px } .hs-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .4s; background: var(--img) center/cover, linear-gradient(135deg, #1b3a8a, #8a4fd0) } .hs-slide.on { opacity: 1 }
+.hs-next { position: absolute; right: -14px; top: 50%; width: 34px; height: 34px; border-radius: 50%; border: 0; background: #fff; z-index: 2; font-size: 1.4rem; line-height: 1; box-shadow: 0 1px 5px rgba(0,0,0,.3) }
+.hs-dots { position: absolute; bottom: 10px; left: 14px; display: flex; gap: 6px; background: rgba(40,50,70,.6); padding: 5px 9px; border-radius: 12px } .hs-dot { width: 7px; height: 7px; border-radius: 7px; background: #cfd3dc; cursor: pointer } .hs-dot.on { width: 18px; background: #fff }
+.hinfo { background: #fff; margin: 12px 12px 12px 0; border-radius: 10px; padding: 16px 18px; position: relative; margin-top: 26px }
+.hcrest { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); background: #fff; border-radius: 50%; width: 40px; height: 40px; display: grid; place-items: center; font-size: 1.4rem }
+.hstars { color: #1c2340; letter-spacing: 2px; font-size: .8rem } .hinfo h3 { font-weight: 700; font-size: 1.3rem; margin: 4px 0 10px }
+.hdist { display: flex; justify-content: space-between; align-items: center; background: #eef1fb; border-radius: 6px; padding: 8px 12px; font-size: .75rem; margin-bottom: 10px } .hdist a { font-size: .85rem }
+.htags { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: .72rem } .htags span { background: #f1f1f4; border-radius: 5px; padding: 5px 9px } .h-more ul { font-size: .78rem; margin: 10px 0 0 }
+.hnight { font-size: 1.15rem; font-weight: 600; margin: 2px 0 } .hprice { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 10px; border-top: 1px solid #e5e5e5; padding-top: 10px } .hp-n { font-size: 1.5rem; font-weight: 800 }
+.mapcard { position: sticky; top: 20px; background: #fff; border-radius: 16px; padding: 4px; box-shadow: 0 2px 10px rgba(0,0,0,.15); cursor: pointer }
+.mapmini, .bigmap { background: var(--map) center/cover, #a2c166 } .mapmini { height: 80px; border-radius: 12px 12px 0 0 } .mapcard button { width: 100%; border: 0; background: #f3f3f5; border-radius: 0 0 12px 12px; padding: 10px; font-weight: 700; color: #0033cc }
+.h-pay { background: #fff; text-align: center; padding: 30px 20px } .visa { display: inline-block; border: 1px solid #333; border-radius: 8px; padding: 8px 16px; color: #1a3a9a } .visa i { font-family: 'Brush Script MT', cursive }
+.h-pay hr { max-width: 1160px; margin: 24px auto } .h-pay h3 { font-size: 1.3rem; font-weight: 700 } .paychips { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 18px 0 }
+.paychips span { border: 1px solid #d5d5d5; border-radius: 8px; padding: 14px 12px; min-width: 70px; font-weight: 800; font-size: .75rem }
+.h-foot { padding: 30px 20px 40px; max-width: 1240px; margin: 0 auto } .ft-box { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.1); overflow: hidden }
+.ft-tabs { display: flex } .ft-tab { flex: 1; border: 0; background: #ebedf0; padding: 18px 8px; text-transform: uppercase; font-size: .8rem; color: #333 } .ft-tab.on { background: #fff; font-weight: 700 }
+.ft-pane { display: none; grid-template-columns: repeat(4, 1fr); gap: 30px 30px; padding: 30px 40px; font-size: .82rem } .ft-pane.on { display: grid } .ft-pane a { color: #1c2340 !important; text-decoration: none } .ft-pane a:hover { text-decoration: underline }
+.ft-contact { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; margin: 0 50px; padding: 26px 0; border-top: 1px solid #e5e5e5; font-size: .8rem; text-align: right }
+.ft-contact > div:first-child { text-align: left } .soc { display: flex; gap: 8px; margin-top: 8px } .soc i { width: 36px; height: 36px; border-radius: 50%; color: #fff; display: grid; place-items: center; font-style: normal; font-weight: 700 }
+.phone { display: inline-block; border: 1px solid #ccc; border-radius: 30px; padding: 10px 22px; margin-bottom: 8px } .ft-contact small { display: block; text-align: left; color: #0033cc; font-size: .65rem }
+.ft-copy { background: #fff; border-radius: 12px; margin-top: 24px; padding: 22px; text-align: center; font-size: .72rem; box-shadow: 0 2px 8px rgba(0,0,0,.08) }
+/* ventanas */
+.hm { position: fixed; inset: 0; z-index: 200; background: #fff; display: none; flex-direction: column } .hm.open { display: flex; animation: hmIn .2s ease } @keyframes hmIn { from { opacity: 0; transform: translateY(16px) } to { opacity: 1; transform: none } }
+.hm-top { display: grid; grid-template-columns: 60px 1fr 60px; align-items: center; padding: 14px 20px; box-shadow: 0 2px 8px rgba(0,0,0,.12); text-align: center; font-size: .85rem } .hm-close { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #4a5568; background: #fff; font-weight: 700 }
+.hm-body { flex: 1; overflow: auto; padding: 16px 24px } .hm-lock { overflow: hidden }
+.hm-sm { left: auto; width: min(500px, 100%) } .hm-sm .hm-body { font-size: .85rem }
+.cmp { display: grid; gap: 14px 16px; width: max-content } .cc { background: #f5e9f4; border-radius: 12px; padding: 14px 10px; text-align: center; font-size: .8rem; min-height: 80px; display: flex; align-items: center; justify-content: center; flex-direction: column } .cc.c-c { background: #e5f3f1 } .cc.c-a { background: #e9eefb } .cc.c-0 { background: #f4f4f4 }
+.ch { font-weight: 700; font-size: .95rem; min-height: 120px } .ch span { letter-spacing: 3px; font-size: .8rem } .cl { font-weight: 700; font-size: .75rem; display: flex; align-items: center; gap: 10px } .cmp-sec { grid-column: 1 / -1; font-weight: 700; font-size: 1.1rem; margin-top: 10px }
+.pt-tabs { display: flex; background: #e5e8ee; border-radius: 10px; padding: 4px; margin-bottom: 16px } .pt-tab { flex: 1; border: 0; background: none; padding: 12px; font-weight: 700; border-radius: 8px } .pt-tab.on { background: #0a40e0; color: #fff }
+.pt-pane { display: none } .pt-pane.on { display: block } .pt-pane h4 { font-weight: 700 } .pt-pane h5 { font-weight: 700; font-size: 1rem }
+.bigmap { position: relative; height: 100%; min-height: 560px; border-radius: 16px }
+.pin { position: absolute; transform: translate(-50%, -100%) } .pin > span { display: grid; place-items: center; width: 44px; height: 44px; background: #fff; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,.35); transition: transform .15s; cursor: pointer } .pin.hot { z-index: 5 } .pin.hot > span { transform: scale(1.2) }
+.tip { position: absolute; bottom: 54px; left: 50%; transform: translateX(-50%); width: 240px; background: #fff; border-radius: 14px; padding: 6px 6px 12px; box-shadow: 0 6px 20px rgba(0,0,0,.35); text-align: left; font-size: .8rem } .tip strong { display: block; margin: 10px 6px 6px; font-size: .95rem }
+.tip-img { height: 100px; border-radius: 10px; background: var(--img) center/cover, linear-gradient(135deg, #1b3a8a, #8a4fd0) } .tg { display: inline-block; background: #f1f1f4; border-radius: 5px; padding: 4px 8px; margin: 0 4px 4px 6px; font-size: .7rem }
+/* comentarios */
+.fb-tab { position: fixed; right: 0; top: 40%; z-index: 60; writing-mode: vertical-rl; transform: rotate(180deg); background: #fff; border: 0; border-radius: 0 10px 10px 0; padding: 18px 8px; font-weight: 700; font-size: .75rem; box-shadow: 0 2px 8px rgba(0,0,0,.25) }
+.fb-overlay { position: fixed; inset: 0; z-index: 300; background: rgba(0,0,0,.55); display: grid; place-items: center } .fb-overlay[hidden] { display: none }
+.fb-modal { background: #fff; border-radius: 6px; padding: 28px; width: min(560px, 94%); position: relative } .fb-modal h3 { font-weight: 700; font-size: 1.4rem } .fb-modal p { font-size: .9rem }
+.fb-close { position: absolute; top: 8px; right: 14px; border: 0; background: none; font-size: 1.6rem }
+.fb-opt { width: 100%; height: 100%; border: 1px solid #e3e3e3; border-radius: 6px; background: #fff; padding: 18px 10px; text-align: center; transition: all .15s } .fb-opt:hover { border-color: #3ac0f0; box-shadow: 0 0 0 2px #3ac0f0 inset }
+.fb-opt strong { display: block; font-size: .85rem; margin: 8px 0 4px } .fb-opt small { font-size: .7rem; display: block } .fb-ico { display: block; height: 44px; background: #eee; border-radius: 4px }
+.fb-form { margin-top: 16px } .fb-form[hidden], .fb-thanks[hidden] { display: none } .fb-thanks { color: #0a7a3a; font-weight: 700; margin-top: 14px }
+.fb-modal .logo-img { height: 34px }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }

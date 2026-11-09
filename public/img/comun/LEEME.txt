@@ -1,0 +1,16 @@
+Guarda aquí las imágenes de esta carpeta con estos nombres:
+logo.png
+logo-negro-original.png
+castillo.png   (castillo con fondo transparente; castillo-original.jpg es el archivo original)
+menu-adventure.jpg
+menu-frozen.jpg
+menu-hotel.jpg
+menu-tranquilidad.jpg
+menu-regal.jpg
+menu-personajes.jpg
+menu-paris.jpg
+menu-premier.jpg
+menu-iberia.jpg
+menu-dory.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

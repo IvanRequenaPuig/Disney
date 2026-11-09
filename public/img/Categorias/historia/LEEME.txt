@@ -1,0 +1,19 @@
+Imágenes de la página "Historia de Disney" (/historia-de-disney). Guarda aquí, con estos nombres exactos:
+
+hero.jpg        -> imagen del HEADER (fondo de la cabecera; recomendado 1920x700, apaisada)
+banner.jpg      -> banner del final de la página (recomendado 1600x600)
+
+Una imagen por tarjeta (recomendado 600x420):
+walt-disney-el-fundador.jpg                   -> Walt Disney, el fundador
+roy-o-disney.jpg                              -> Roy O. Disney
+los-inicios-1923.jpg                          -> Los inicios (1923)
+nace-mickey-mouse-1928.jpg                    -> Nace Mickey Mouse (1928)
+blancanieves-1937.jpg                         -> Blancanieves (1937)
+disneyland-abre-sus-puertas-1955.jpg          -> Disneyland abre sus puertas (1955)
+walt-disney-world-1971.jpg                    -> Walt Disney World (1971)
+disneyland-paris-1992.jpg                     -> Disneyland Paris (1992)
+las-grandes-adquisiciones.jpg                 -> Las grandes adquisiciones
+cronologia-completa.jpg                       -> Cronología completa
+
+Si una imagen no existe, se ve un degradado con los colores de la categoría (no se rompe nada).
+Si quieres otro nombre o formato (png, webp), cámbialo en src/config/images.js (bloque "categorias").

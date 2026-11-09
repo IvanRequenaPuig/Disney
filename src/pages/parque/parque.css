@@ -1,0 +1,91 @@
+#parque { font-family: 'Segoe UI', system-ui, sans-serif; color: #1b2b4b; background: #f7f7f8; overflow-x: hidden } #parque .dl-header { position: relative }
+#parque a { color: #0033cc } #parque .btn-dl, #parque .btn-dl:hover { color: #fff }
+.pk-switch { display: inline-flex; background: #fff; border: 1px solid #e3e6f0; border-radius: 8px; padding: 4px; box-shadow: 0 2px 10px rgba(0,0,0,.14) } .pk-switch a { padding: 14px 24px; font-weight: 700; font-size: .85rem; color: #1b2b4b; text-decoration: none; border-radius: 6px; transition: background .2s } .pk-switch a:hover { background: #eef2ff } .pk-switch a.on { background: #0033cc; color: #fff }
+.pk-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 80; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.16); padding: 12px; display: flex; justify-content: center; transform: translateY(-110%); transition: transform .3s } .pk-bar .pk-switch { box-shadow: none } .stuck .pk-bar { transform: none }
+.pk-hero { position: relative; height: min(760px, 56vw); min-height: 360px; border-radius: 0 0 36px 36px; background: var(--hero) center/cover, linear-gradient(180deg, #19a9c4, #7fb6ee 45%, #f6c8a8 75%, #f3a5c8) }
+.pk-heroswitch { position: absolute; left: 0; right: 0; bottom: 96px; display: flex; justify-content: center; z-index: 3 }
+.pk-intro { position: relative; z-index: 2; max-width: 1312px; width: 94%; margin: -76px auto 0; padding: 52px 40px 44px; text-align: center; border-radius: 56px; background: linear-gradient(120deg, #c9f1ff 0%, #eef2ff 48%, #ffd9ee 100%) }
+.pk-intro h1 { font-weight: 800; font-size: 1.7rem; max-width: 520px; margin: 0 auto 12px; line-height: 1.3 } .pk-intro > p { max-width: 800px; margin: 0 auto 28px }
+.pk-feats { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 30px } .pk-feats > div { width: 180px; min-height: 182px; padding: 18px 12px; border: 1px solid rgba(255,255,255,.8); background: rgba(255,255,255,.45); border-radius: 14px; font-size: .82rem; transition: transform .25s, background .25s } .pk-feats > div:hover { transform: translateY(-5px); background: rgba(255,255,255,.8) }
+.pk-feats span { display: block; font-size: 2rem; margin-bottom: 14px; filter: hue-rotate(160deg) saturate(1.5) } .pk-feats p { margin: 0 }
+.pk-link { font-weight: 700; font-size: .85rem; text-decoration: none }
+.pk-map { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 20px 70px; background: linear-gradient(#f7f7f8, #fdd9ec 90%) } .pk-map h2, .pk-h { font-weight: 800; font-size: 1.55rem; text-align: center; margin: 0 auto 26px; max-width: 900px }
+.pk-mapbox { position: relative; display: block; width: min(720px, 94%); margin: 0 auto 40px } .pk-mapbox img { width: 100%; display: block; border-radius: 28px; filter: drop-shadow(0 12px 24px rgba(40,60,20,.25)) }
+.pk-pin { position: absolute; transform: translate(-50%, -100%); border: 0; background: none; padding: 0; cursor: pointer; z-index: 2 } .pk-pin > i { display: block; width: 28px; height: 28px; background: #fff; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); box-shadow: 0 3px 8px rgba(0,0,0,.35); position: relative; transition: transform .2s } .pk-pin > i::after { content: ''; position: absolute; inset: 8px; border-radius: 50%; background: var(--c) }
+.pk-pin:hover > i, .pk-pin.hot > i { transform: rotate(-45deg) scale(1.25) } .pk-pin.hot { z-index: 6 }
+.pk-tip { display: none; position: absolute; bottom: 42px; left: 50%; transform: translateX(-50%); width: 220px; background: #fff; border-radius: 14px; padding: 12px 14px; text-align: left; box-shadow: 0 8px 22px rgba(0,0,0,.3); font-size: .78rem; color: #1b2b4b } .pk-tip b { display: block; font-size: .95rem; margin-bottom: 4px }
+.pk-wrap { max-width: 1210px; margin: 0 auto; padding: 56px 20px } #atracciones { padding-top: 40px }
+.pk-orn { display: block; width: 500px; max-width: 80%; margin: 0 auto 18px }
+.pk-cs { position: relative } .pk-view { overflow: hidden; padding: 12px 0 18px } .pk-track { display: flex; transition: transform .55s ease } .pk-cardw { flex: 0 0 33.333%; padding: 0 12px } @media (max-width: 1099px) { .pk-cardw { flex-basis: 50% } } @media (max-width: 767px) { .pk-cardw { flex-basis: 100% } }
+.pk-card { height: 100%; border-radius: 24px; padding: 8px; background: linear-gradient(170deg, var(--g1), var(--g2)); box-shadow: 0 8px 24px rgba(30,40,100,.2); transition: transform .3s, box-shadow .3s } .pk-card:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(30,40,100,.3) }
+.pk-cimg { height: 340px; border-radius: 16px 16px 0 0; background: var(--img) center/cover, linear-gradient(135deg, #1b3a8a, #c04fa0); margin-bottom: -2px }
+.pk-cbody { background: #fff; border-radius: 16px; padding: 16px 16px 20px; min-height: 190px; display: flex; flex-direction: column } .pk-cbody h3 { font-weight: 800; font-size: 1.15rem } .pk-cbody p { flex: 1; font-size: .88rem } .pk-cbody a { font-weight: 700; font-size: .8rem; padding-left: 34px; text-decoration: none }
+.pk-arrows { display: flex; justify-content: center; gap: 12px; margin-top: 10px } .pk-arrows button { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #8a93a8; background: #fff; font-size: 1.4rem; line-height: 1; transition: all .15s } .pk-arrows button:hover { border-color: #0a40e0; color: #0a40e0 }
+.pk-dots { display: flex; justify-content: center; gap: 6px; margin-top: 14px } .pk-dot { width: 8px; height: 8px; border-radius: 8px; background: #c8cbd6; cursor: pointer; transition: all .3s } .pk-dot.on { width: 26px; background: #0033cc }
+.pk-banner { height: min(560px, 40vw); min-height: 240px; background: var(--img) center/cover, linear-gradient(120deg, #1a0f4a, #5a2ea6 50%, #e0457b) }
+.pk-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px } @media (max-width: 900px) { .pk-3 { grid-template-columns: 1fr } }
+.pk-show { background: #fff; border-radius: 16px; padding: 8px 8px 20px; box-shadow: 0 2px 10px rgba(0,0,0,.1); display: flex; flex-direction: column; transition: transform .25s } .pk-show:hover { transform: translateY(-5px) } .pk-simg { height: 207px; border-radius: 10px; background: var(--img) center/cover, linear-gradient(135deg, #1b3a8a, #c04fa0) }
+.pk-show h3 { font-weight: 800; font-size: 1.15rem; margin: 14px 8px 8px } .pk-show p { margin: 0 8px 14px; font-size: .88rem; flex: 1 } .pk-show a { margin: 0 8px 0 40px; font-weight: 700; font-size: .8rem; text-decoration: none }
+.pk-sub { text-align: center; margin: -14px 0 30px } .pk-circles { justify-items: center } .pk-circ { text-align: center; text-decoration: none; color: #1b2b4b !important } .pk-circ b { display: block; font-size: 1.1rem; text-decoration: underline; margin-top: 16px } .pk-circ small { display: block; font-size: .8rem; margin-top: 6px }
+.pk-cimgc { width: 256px; height: 256px; border-radius: 50%; border: 6px solid #fff; box-shadow: 0 4px 16px rgba(0,0,0,.2); background: var(--img) center/cover, linear-gradient(135deg, #7a2a8a, #e0457b); transition: transform .35s } .pk-circ:hover .pk-cimgc { transform: scale(1.05) rotate(-2deg) }
+.pk-note { font-size: .72rem; text-align: center; max-width: 1190px; margin: 26px auto 0 } .pk-note.left { text-align: left }
+.pk-pink { background: linear-gradient(#ffcfe9, #fff 60%); clip-path: polygon(0 0, 47% 0, 50% 22px, 53% 0, 100% 0, 100% 100%, 0 100%); padding-top: 26px } .pk-pink .pk-wrap { padding-top: 40px }
+.pk-split { display: grid; grid-template-columns: 1fr 480px; gap: 40px; align-items: center; margin: 0 0 36px } .pk-split.rev { grid-template-columns: 480px 1fr } .pk-split.rev > :last-child { order: -1 } .pk-split h3 { font-weight: 800; font-size: 1.2rem } .pk-split p { font-size: .85rem }
+.pk-simg2 { height: 268px; border-radius: 10px; background: var(--img) center/cover, linear-gradient(135deg, #1b3a8a, #c04fa0) } @media (max-width: 900px) { .pk-split, .pk-split.rev { grid-template-columns: 1fr } }
+.pk-white { background: #fff; border-radius: 0 0 90px 90px; padding-bottom: 20px }
+.pk-plan { background: #c0d9f8; padding-bottom: 20px } .pk-plan .pk-wrap { max-width: 1210px } .pk-chips { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-bottom: 44px } .pk-chips > div { display: flex; align-items: center; gap: 14px; max-width: 330px; font-size: .8rem } .pk-chips span { background: #fff; border-radius: 12px; width: 48px; height: 48px; display: grid; place-items: center; font-size: 1.2rem; flex: none }
+.pk-faqband { background: #e5ecfb; max-width: 1730px; margin: 0 auto 30px; padding: 54px 20px 60px; border-radius: 0 0 28px 28px } .pk-faq { max-width: 1080px; margin: 0 auto; background: #fff; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,.1); overflow: hidden } .pk-faq h4 { padding: 22px 24px; margin: 0; font-weight: 700; font-size: 1rem }
+.pk-faq .acc-i { border-top: 1px solid #e5e5e5 } .pk-faq .acc-q { width: 100%; border: 0; background: none; display: flex; justify-content: space-between; align-items: center; padding: 22px 24px; font-weight: 700; font-size: .85rem; text-align: left } .pk-faq .acc-q b { font-size: 1.5rem; font-weight: 400 } .pk-faq .acc-a { padding: 0 24px 20px; font-size: .85rem }
+.pk-cond { max-width: 600px; margin: 70px auto 0; text-align: center } .pk-cond h3 { font-weight: 800; font-size: 1.4rem; margin-bottom: 30px } .pk-cond p { font-size: .72rem }
+.pk-rev { opacity: 0; transform: translateY(26px); transition: opacity .65s, transform .65s } .pk-rev.in { opacity: 1; transform: none }
+.pk-modal { position: fixed; inset: 0; z-index: 300; background: rgba(8,14,40,.65); display: none; place-items: center; padding: 20px } .pk-modal.open { display: grid; animation: pkIn .25s ease } @keyframes pkIn { from { opacity: 0 } to { opacity: 1 } } .pk-lock { overflow: hidden }
+.pk-mbox { position: relative; background: #fff; border-radius: 24px; padding: 28px; width: min(980px, 100%); max-height: 94vh; overflow: auto; text-align: center } .pk-mbox h3 { font-weight: 800 } .pk-x { position: absolute; top: 14px; right: 16px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: #f1f4fd; font-size: .9rem }
+.pk-mapbox.big { max-width: 100%; margin: 10px 0 14px } .pk-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; list-style: none; padding: 0; margin: 0; font-size: .82rem } .pk-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 7px }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } .pk-rev { opacity: 1; transform: none } }
+
+/* ====== tema Disney Adventure World (.adv) ====== */
+.pk-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit }
+.pk-herologo { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); width: min(700px, 62vw); filter: drop-shadow(0 4px 18px rgba(0,0,0,.5)); pointer-events: none }
+.pk-herotext { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); color: #dfe6ff; font-weight: 800; font-size: clamp(2rem, 6vw, 4.4rem); letter-spacing: .04em; text-align: center; text-shadow: 0 4px 20px rgba(0,0,0,.6) }
+.pk-pause { position: absolute; top: 16px; right: 20px; z-index: 4; width: 38px; height: 38px; border-radius: 50%; border: 0; background: #fff; font-size: .8rem; box-shadow: 0 2px 8px rgba(0,0,0,.3); transition: transform .2s } .pk-pause:hover { transform: scale(1.1) }
+.adv .pk-hero { background: var(--hero) center/cover, radial-gradient(ellipse 60% 70% at 15% 85%, rgba(130,35,55,.6), transparent 60%), radial-gradient(ellipse 50% 60% at 90% 100%, rgba(70,40,150,.5), transparent 60%), #16142a }
+.adv .pk-intro { color: #fff; background: radial-gradient(ellipse 36% 70% at 0% 100%, rgba(196,128,86,.75), transparent 70%), radial-gradient(ellipse 40% 60% at 100% 100%, rgba(176,52,176,.7), transparent 70%), radial-gradient(ellipse 14% 22% at 50% 0%, rgba(255,255,255,.55), transparent 85%), linear-gradient(160deg, #2a1f96, #1b1366 55%, #2c1796) }
+.adv .pk-feats > div { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.2) } .adv .pk-feats > div:hover { background: rgba(255,255,255,.14) } .adv .pk-feats span { filter: none; color: #9fe4ff }
+.adv .pk-link { display: inline-block; border: 2px solid #fff; color: #fff !important; border-radius: 30px; padding: 12px 24px; transition: background .2s, color .2s } .adv .pk-link:hover { background: #fff; color: #1b1366 !important }
+.adv .pk-map { background: linear-gradient(#f7f7f8, #dfe6ff 45%, #a9bdf9) } .adv .pk-dots { display: none }
+.pk-orn.comp { width: 450px }
+.aw-map { display: inline-block; width: min(640px, 92%); max-width: none } .aw-map .aw-base { width: 100%; display: block; filter: drop-shadow(0 14px 18px rgba(40,50,120,.3)); border-radius: 0 }
+.aw-map.big { width: min(900px, 100%) }
+.aw-z { position: absolute; inset: 0; pointer-events: none; z-index: 1 } .aw-z:hover, .aw-z.hot { z-index: 6 }
+.aw-lift { position: absolute; inset: 0; transition: transform .35s cubic-bezier(.2,.8,.2,1), filter .35s } .aw-z:hover .aw-lift, .aw-z.hot .aw-lift { transform: translateY(-3.5%) scale(1.025); filter: drop-shadow(0 16px 10px rgba(10,20,70,.5)) }
+.aw-clip { position: absolute; inset: 0; clip-path: var(--poly) } .aw-clip img { width: 100%; height: 100%; display: block; border-radius: 0; filter: none }
+.aw-hit { position: absolute; inset: 0; clip-path: var(--poly); pointer-events: auto; cursor: pointer }
+.aw-pin { position: absolute; transform: translate(-50%, -100%); pointer-events: none } .aw-pin > i { display: block; width: 26px; height: 26px; background: #fff; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); box-shadow: 0 3px 8px rgba(0,0,0,.35); position: relative } .aw-pin > i::after { content: ''; position: absolute; inset: 7px; border-radius: 50%; background: var(--c) }
+.aw-lab { position: absolute; top: calc(100% + 10px); left: 50%; transform: translateX(-50%) translateY(6px); opacity: 0; transition: opacity .25s, transform .25s; background: #fff; border-radius: 30px; padding: 8px 16px; font-weight: 700; font-size: .85rem; color: #0a40e0; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,.25) } .aw-z:hover .aw-lab, .aw-z.hot .aw-lab { opacity: 1; transform: translateX(-50%) }
+.adv .pk-cimgc { border: 6px solid transparent; background: var(--img) center/cover padding-box, linear-gradient(135deg, #ffb3d9, #9a8cff 50%, #6ac8ff) border-box; box-shadow: 0 4px 16px rgba(60,40,140,.18) }
+.adv .pk-circ b { text-decoration: none }
+.adv .pk-pink { background: linear-gradient(#a8bdf9, #fff 75%) } .adv .pk-cs2 .pk-cardw { display: flex } .adv .pk-cs2 .pk-show { width: 100% }
+.adv .pk-plan { background: #c0d9f8 } .adv .pk-faqband { background: #e5ecfb }
+
+/* Selector Parque Disneyland / Disney Adventure World: la pestaña activa lleva fondo azul y texto BLANCO
+   (antes "#parque a { color: azul }" ganaba y el texto azul se perdía sobre el fondo azul) */
+#parque .pk-switch a { color: #1b2b4b; }
+#parque .pk-switch a:hover { background: #eef2ff; }
+#parque .pk-switch a.on, #parque .pk-switch a.on:hover { background: #0033cc; color: #fff; }
+/* Mapa y botón "Ver el mapa" centrados */
+#parque .pk-map > .btn-dl { display: inline-block; margin: 0 auto; align-self: center; }
+/* Mapa de Adventure World y mapa grande de la ventana: también centrados */
+.aw-map { display: block; margin-left: auto; margin-right: auto }
+.pk-mapbox.big { width: 100%; max-width: 100%; margin: 10px 0 14px }
+.aw-map.big { width: min(900px, 100%); margin: 10px auto 14px }
+
+/* Botones de Disneyland Paris y Disney Adventure World.
+   "#parque a { color: azul }" (especificidad de id) ganaba a ".btn-outline-dl:hover { color: #fff }",
+   así que al pasar el ratón el texto quedaba azul sobre fondo azul y desaparecía.
+   Aquí se fuerza texto BLANCO en hover y se añade la animación de crecer. */
+#parque .btn-outline-dl, #parque .btn-dl { transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease, filter .2s ease; will-change: transform }
+#parque .btn-outline-dl { color: #0033cc; background: #fff }
+#parque .btn-outline-dl:hover, #parque .btn-outline-dl:focus-visible { background: #0033cc; color: #fff; transform: scale(1.08); box-shadow: 0 8px 20px rgba(0, 51, 204, .35) }
+#parque .btn-outline-dl:active { transform: scale(1.02) }
+#parque .btn-dl:hover, #parque .btn-dl:focus-visible { color: #fff; transform: scale(1.08); filter: brightness(1.12); box-shadow: 0 8px 20px rgba(0, 51, 204, .35) }
+#parque .btn-dl:active { transform: scale(1.02) }

@@ -1,0 +1,34 @@
+Guarda aquí las imágenes de esta carpeta con estos nombres:
+header.jpg
+d-atr-1.jpg
+d-atr-2.jpg
+d-atr-3.jpg
+d-atr-4.jpg
+d-atr-5.jpg
+d-atr-6.jpg
+d-per-1.jpg
+d-per-2.jpg
+d-per-3.jpg
+d-per-4.jpg
+d-show-1.jpg
+d-show-2.jpg
+d-show-3.jpg
+d-show-4.jpg
+a-atr-1.jpg
+a-atr-2.jpg
+a-atr-3.jpg
+a-atr-4.jpg
+a-atr-5.jpg
+a-atr-6.jpg
+a-per-1.jpg
+a-per-2.jpg
+a-per-3.jpg
+a-per-4.jpg
+a-show-1.jpg
+a-show-2.jpg
+a-show-3.jpg
+a-show-4.jpg
+reserva-paquetes.jpg
+reserva-entradas.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

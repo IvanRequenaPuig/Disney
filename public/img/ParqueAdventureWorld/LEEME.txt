@@ -1,0 +1,22 @@
+Imágenes de la página Disney Adventure World. Guarda aquí:
+logo-adventure-world.png
+hero.mp4
+hero.jpg
+mapa.png
+banner-mulan.jpg
+restaurantes.jpg
+tiendas.jpg
+atraccion-1.jpg
+atraccion-2.jpg
+atraccion-3.jpg
+atraccion-4.jpg
+atraccion-5.jpg
+atraccion-6.jpg
+espectaculo-1.jpg
+espectaculo-2.jpg
+espectaculo-3.jpg
+personaje-1.jpg
+personaje-2.jpg
+personaje-3.jpg
+
+(mapa.png ya está: es tu mapa transparente recortado. Si cambias un nombre, actualízalo en src/config/images.js)

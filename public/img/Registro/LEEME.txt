@@ -1,0 +1,5 @@
+Guarda aquí las imágenes de esta carpeta con estos nombres:
+header.jpg
+fondo-login.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

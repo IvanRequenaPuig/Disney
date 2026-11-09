@@ -1,0 +1,1 @@
+Hoteles Disney: header.jpg (hero), experiencia-1..4.jpg, alojamiento-1..2.jpg. Ver src/config/images.js (hotelesDisney).

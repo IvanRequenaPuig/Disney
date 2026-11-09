@@ -1,0 +1,7 @@
+Guarda aquí las imágenes de esta carpeta con estos nombres:
+header.jpg        (cabecera grande de la página de búsqueda, mejor 1920x600)
+resultado-1.jpg
+resultado-2.jpg
+resultado-3.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

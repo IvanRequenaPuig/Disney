@@ -1,0 +1,18 @@
+Imágenes de la página "Series" (/series). Guarda aquí, con estos nombres exactos:
+
+hero.jpg        -> imagen del HEADER (fondo de la cabecera; recomendado 1920x700, apaisada)
+banner.jpg      -> banner del final de la página (recomendado 1600x600)
+
+Una imagen por tarjeta (recomendado 600x420):
+animacion.jpg                                 -> Animación
+comedia.jpg                                   -> Comedia
+drama.jpg                                     -> Drama
+ciencia-ficcion-y-fantasia.jpg                -> Ciencia ficción y fantasía
+accion-y-aventuras.jpg                        -> Acción y aventuras
+superheroes.jpg                               -> Superhéroes
+star-wars.jpg                                 -> Star Wars
+infantiles.jpg                                -> Infantiles
+docuseries.jpg                                -> Docuseries
+
+Si una imagen no existe, se ve un degradado con los colores de la categoría (no se rompe nada).
+Si quieres otro nombre o formato (png, webp), cámbialo en src/config/images.js (bloque "categorias").

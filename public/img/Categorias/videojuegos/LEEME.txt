@@ -1,0 +1,18 @@
+Imágenes de la página "Videojuegos" (/videojuegos). Guarda aquí, con estos nombres exactos:
+
+hero.jpg        -> imagen del HEADER (fondo de la cabecera; recomendado 1920x700, apaisada)
+banner.jpg      -> banner del final de la página (recomendado 1600x600)
+
+Una imagen por tarjeta (recomendado 600x420):
+playstation.jpg                               -> PlayStation
+xbox.jpg                                      -> Xbox
+nintendo-switch.jpg                           -> Nintendo Switch
+pc.jpg                                        -> PC
+movil.jpg                                     -> Móvil
+lego.jpg                                      -> LEGO
+kingdom-hearts.jpg                            -> Kingdom Hearts
+disney-dreamlight-valley.jpg                  -> Disney Dreamlight Valley
+clasicos-retro.jpg                            -> Clásicos retro
+
+Si una imagen no existe, se ve un degradado con los colores de la categoría (no se rompe nada).
+Si quieres otro nombre o formato (png, webp), cámbialo en src/config/images.js (bloque "categorias").

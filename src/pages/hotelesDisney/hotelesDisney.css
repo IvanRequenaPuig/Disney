@@ -1,0 +1,90 @@
+#hdisney { font-family: 'Segoe UI', system-ui, sans-serif; color: #1c2340; background: #f6f6f6; overflow-x: hidden }
+#hdisney .dl-header { position: relative; box-shadow: 0 1px 0 #e5e5e5 }
+#hdisney a { color: #0033cc } #hdisney .btn-dl, #hdisney .btn-dl:hover { color: #fff }
+.hd-ph, .hd-card-img, .hd-room-img { background: var(--img) center/cover no-repeat, linear-gradient(135deg, #f3a45b, #c9486f 55%, #5b3a9e) }
+
+/* ── Header (imagen con base curva) + tarjeta de pestañas ── */
+.hd-hero { position: relative; height: 370px; display: grid; place-items: center; border-radius: 0 0 50% 50% / 0 0 80px 80px; background: var(--hero) center/cover no-repeat, linear-gradient(120deg, #2c4a86, #5b7fc0 50%, #2a3a6e) }
+.hd-hero::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: rgba(15, 20, 45, .25) }
+.hd-hero h1 { position: relative; color: #fff; font-weight: 800; font-size: 1.9rem; margin: 0; padding-bottom: 40px; text-shadow: 0 2px 10px rgba(0, 0, 0, .45) }
+.hd-tabs { position: relative; z-index: 2; width: min(490px, 94%); margin: -50px auto 0; background: #fff; border-radius: 8px; box-shadow: 0 2px 12px rgba(0, 0, 0, .18); display: flex; justify-content: space-around; padding: 18px 8px 10px }
+.hd-tab { flex: 1; border: 0; background: none; text-align: center; font-weight: 700; font-size: .78rem; padding: 0 8px 12px; position: relative; color: #1c2340 } .hd-tab .ic { display: block; font-size: 1.6rem; margin-bottom: 6px }
+.hd-tab::after { content: ''; position: absolute; left: 22%; right: 22%; bottom: 0; height: 3px; border-radius: 3px; background: #0a5cff; transform: scaleX(0); transition: transform .25s } .hd-tab.on::after { transform: scaleX(1) }
+.hd-tab:focus-visible, #hdisney .btn-dl:focus-visible, .hd-btn-o:focus-visible, .hd-arrow:focus-visible, .hd-q-b:focus-visible { outline: 3px solid #0a5cff; outline-offset: 3px }
+/* Barra fija que sustituye a la cabecera al bajar */
+.hd-sub { position: fixed; top: 0; left: 0; right: 0; z-index: 80; background: #fff; box-shadow: 0 2px 10px rgba(0, 0, 0, .18); display: flex; justify-content: center; gap: 24px; padding: 18px 10px 6px; transform: translateY(-110%); transition: transform .3s }
+.stuck .hd-sub { transform: none } .hd-sub .hd-tab { flex: none; padding-bottom: 12px } .hd-sub .hd-tab .ic { display: none }
+
+/* ── Estructura ── */
+.hd-sec { scroll-margin-top: 90px } .hd-wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px } .hd-center { text-align: center }
+.hd-intro { text-align: center; max-width: 740px; margin: 0 auto; padding: 56px 20px 40px } .hd-intro h2 { font-weight: 800; font-size: 1.45rem; margin-bottom: 10px } .hd-intro p { margin: 0 }
+.hd-h { font-weight: 800; font-size: 1.4rem; margin: 70px auto 10px; max-width: 760px } .hd-center > .hd-h:first-child { margin-top: 20px }
+.hd-sub2 { max-width: 720px; margin: 0 auto 30px }
+
+/* Botón contorno (píldora) */
+.hd-btn-o { display: inline-block; border: 2px solid #0a40e0; border-radius: 30px; padding: .55rem 1.6rem; font-weight: 700; font-size: .85rem; text-decoration: none; background: #fff; color: #0033cc; transition: background .2s, color .2s }
+#hdisney .hd-btn-o:hover { background: #0a40e0; color: #fff }
+
+/* ── Carruseles ── */
+.hd-carwrap { width: min(1110px, 94vw); margin: 0 auto 26px; position: relative; left: 50%; transform: translateX(-50%) }
+.hd-car { position: relative }
+.hd-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 4px 14px } .hd-track::-webkit-scrollbar { display: none }
+.hd-card { flex: 0 0 calc((100% - 32px) / 3); max-width: 320px; min-width: 260px; scroll-snap-align: start; background: #fff; border-radius: 12px; box-shadow: 0 1px 8px rgba(0, 0, 0, .12); overflow: hidden; text-align: left; display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s }
+.hd-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(20, 30, 90, .2) }
+.hd-card-img { height: 175px; border-radius: 0 0 50% 50% / 0 0 22px 22px }
+.hd-card-b { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; align-items: flex-start } .hd-card-b h3 { font-weight: 800; font-size: 1.1rem; margin: 0 0 10px }
+.hd-card-b p { font-size: .8rem; margin: 10px 0 18px; flex: 1 } .hd-card-b .hd-btn-o { align-self: center }
+.hd-card:not(.hd-card-s) .hd-card-b .hd-btn-o { margin-top: auto }
+.hd-stars { font-size: .8rem; white-space: nowrap; letter-spacing: 1px }
+.hd-tags { display: flex; flex-direction: column; gap: 6px; align-items: flex-start } .hd-tag { border: 1px solid #1c2340; border-radius: 4px; padding: 2px 8px; font-size: .68rem }
+.hd-arrow { position: absolute; top: 45%; z-index: 3; width: 38px; height: 38px; border-radius: 50%; border: 1px solid #ddd; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, .2); font-size: 1.5rem; line-height: 1; display: grid; place-items: center; color: #1c2340 }
+.hd-arrow[hidden] { display: none } .hd-next { right: -8px } .hd-prev { left: -8px }
+.hd-dots { display: flex; justify-content: center; gap: 8px; margin-top: 6px } .hd-dots[hidden] { display: none }
+.hd-dot { width: 9px; height: 9px; border-radius: 50%; background: #c9ccd3; cursor: pointer; transition: all .2s } .hd-dot.on { width: 22px; border-radius: 6px; background: #0a40e0 }
+.hd-compare { margin-top: 44px }
+
+/* ¿Sabías que? */
+.hd-did { max-width: 860px; margin: 40px auto 0; background: #fff; border: 1px solid #cfd3dc; border-radius: 6px; padding: 16px 26px; text-align: left } .hd-did p { margin: 4px 0 0; font-size: .85rem }
+
+/* Columnas de iconos */
+.hd-ic { display: grid; place-items: center; width: 72px; height: 72px; margin: 0 auto 18px; font-size: 2.6rem; color: #1c2340 }
+.hd-cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; text-align: left; margin-bottom: 36px } .hd-cols4 > div > .hd-ic { margin-left: 0 }
+.hd-cols4 h4 { font-weight: 800; font-size: 1.05rem; margin: 6px 0 14px } .hd-cols4 p { font-size: .78rem; margin: 0 }
+
+/* Calendario de precios */
+.hd-info { display: flex; justify-content: center; gap: 36px; flex-wrap: wrap; font-size: .75rem; text-align: left; margin-bottom: 30px } .hd-info div { display: flex; align-items: center; gap: 10px; max-width: 290px }
+.hd-info span { width: 46px; height: 46px; flex: none; border-radius: 6px; background: #fff; box-shadow: 0 1px 5px rgba(0, 0, 0, .12); display: grid; place-items: center; font-size: 1.1rem }
+.hd-cal { max-width: 1040px; margin: 0 auto; padding: 0 16px }
+.hd-note { max-width: 1010px; margin: 22px auto 0; padding: 0 16px; font-size: .75rem }
+
+/* Alojamientos */
+.hd-rooms { display: flex; flex-direction: column; gap: 40px; text-align: left; margin-bottom: 20px }
+.hd-room { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center } .hd-room-img { height: 267px; border-radius: 10px }
+.hd-room-t h3 { font-weight: 800; font-size: 1.2rem; margin-bottom: 12px } .hd-room-t p { font-size: .8rem; margin-bottom: 14px }
+.hd-room-r .hd-room-img { order: 2 }
+
+/* Servicios */
+.hd-serv { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px 20px; text-align: left; font-size: .8rem; max-width: 960px; margin: 0 auto }
+.hd-serv div { display: flex; align-items: center; gap: 10px } .hd-serv span { font-size: 1.3rem; width: 28px; text-align: center }
+
+/* Por qué comprar */
+.hd-why { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px 24px; margin-bottom: 36px }
+.hd-why > div { width: 227px } .hd-why h4 { font-weight: 800; font-size: 1.05rem; margin: 16px 0 12px } .hd-why p { font-size: .78rem }
+.hd-why-img { display: block; width: 100%; height: auto }
+.hd-why-i { height: 128px; background: radial-gradient(circle at 50% 120%, transparent 38%, rgba(255, 255, 255, .13) 39% 41%, transparent 42%) var(--c); position: relative; display: grid; place-items: center }
+.hd-why-i::before { content: ''; position: absolute; top: 0; bottom: 0; left: 28%; right: 28%; background: var(--l); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 88%, 0 100%) }
+.hd-why-i b { position: relative; font-size: 2.2rem; color: var(--c) }
+
+/* FAQ */
+.hd-faq { max-width: 696px; margin: 60px auto 0; background: #fff; border-radius: 16px; box-shadow: 0 2px 10px rgba(0, 0, 0, .1); overflow: hidden }
+.hd-faq > h4 { margin: 0; padding: 22px 24px; font-weight: 800; font-size: 1.05rem }
+.hd-q { border-top: 1px solid #e3e5ea } .hd-q-b { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; border: 0; background: none; text-align: left; font-weight: 700; font-size: .82rem; padding: 22px 24px; color: #1c2340 } .hd-q-b i { font-style: normal; font-size: 1.5rem; font-weight: 400 }
+.hd-q-a { padding: 0 24px 20px } .hd-q-a[hidden] { display: none } .hd-q-a p { margin: 0; font-size: .85rem }
+
+/* Condiciones */
+.hd-cond { max-width: 680px; margin: 60px auto 70px; padding: 0 20px; text-align: center; font-size: .78rem } .hd-cond h2 { font-weight: 800; font-size: 1.4rem; margin-bottom: 26px } .hd-cond p { margin-bottom: 18px }
+
+@media (max-width: 860px) {
+  .hd-cols4, .hd-serv { grid-template-columns: repeat(2, 1fr) } .hd-room { grid-template-columns: 1fr } .hd-room-r .hd-room-img { order: 0 }
+  .hd-card { flex-basis: 78%; max-width: none } .hd-sub { gap: 8px; overflow-x: auto } .hd-hero { height: 300px } .hd-next { right: 0 } .hd-prev { left: 0 }
+}

@@ -1,0 +1,3 @@
+Imágenes de la página Explorar (/explorar). Una subcarpeta por tipo y un archivo por elemento:
+atracciones/adventure-isle.jpg, restaurantes/stark-factory.jpg, entretenimiento/disney-stars-on-parade.jpg ...
+El nombre = nombre del elemento en minúsculas y con guiones. Si falta, se ve un degradado.

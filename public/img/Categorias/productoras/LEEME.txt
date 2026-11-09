@@ -1,0 +1,23 @@
+Imágenes de la página "Productoras" (/productoras). Guarda aquí, con estos nombres exactos:
+
+hero.jpg        -> imagen del HEADER (fondo de la cabecera; recomendado 1920x700, apaisada)
+banner.jpg      -> banner del final de la página (recomendado 1600x600)
+
+Una imagen por tarjeta (recomendado 600x420):
+walt-disney-pictures.jpg                      -> Walt Disney Pictures
+walt-disney-animation-studios.jpg             -> Walt Disney Animation Studios
+pixar.jpg                                     -> Pixar
+marvel-studios.jpg                            -> Marvel Studios
+lucasfilm-star-wars.jpg                       -> Lucasfilm · Star Wars
+20th-century-studios-fox.jpg                  -> 20th Century Studios (Fox)
+searchlight-pictures.jpg                      -> Searchlight Pictures
+touchstone-pictures.jpg                       -> Touchstone Pictures
+hollywood-pictures.jpg                        -> Hollywood Pictures
+abc.jpg                                       -> ABC
+espn.jpg                                      -> ESPN
+hulu.jpg                                      -> Hulu
+national-geographic.jpg                       -> National Geographic
+fx.jpg                                        -> FX
+
+Si una imagen no existe, se ve un degradado con los colores de la categoría (no se rompe nada).
+Si quieres otro nombre o formato (png, webp), cámbialo en src/config/images.js (bloque "categorias").

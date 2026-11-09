@@ -1,0 +1,7 @@
+Imágenes de la página Entradas con fecha y Paquetes. Guarda aquí:
+header.jpg        (imagen de FONDO de la cabecera, detrás del título y las 2 tarjetas; mejor 1920x700)
+extras.jpg
+planes-comidas.jpg
+dias-visita.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images/reserva.js)

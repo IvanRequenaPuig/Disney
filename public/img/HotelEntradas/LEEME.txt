@@ -1,0 +1,22 @@
+Guarda aquí las imágenes de esta carpeta con estos nombres:
+map.jpg
+hotel1.jpg
+hotel1-2.jpg
+hotel1-3.jpg
+hotel2.jpg
+hotel2-2.jpg
+hotel2-3.jpg
+hotel3.jpg
+hotel3-2.jpg
+hotel3-3.jpg
+hotel4.jpg
+hotel4-2.jpg
+hotel4-3.jpg
+hotel5.jpg
+hotel5-2.jpg
+hotel5-3.jpg
+hotel6.jpg
+hotel6-2.jpg
+hotel6-3.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

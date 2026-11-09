@@ -1,0 +1,17 @@
+Imágenes de la página "Parques" (/parques). Guarda aquí, con estos nombres exactos:
+
+hero.jpg        -> imagen del HEADER (fondo de la cabecera; recomendado 1920x700, apaisada)
+banner.jpg      -> banner del final de la página (recomendado 1600x600)
+
+Una imagen por tarjeta (recomendado 600x420):
+disneyland-paris.jpg                          -> Disneyland Paris
+walt-disney-world.jpg                         -> Walt Disney World
+disneyland-resort.jpg                         -> Disneyland Resort
+tokyo-disney-resort.jpg                       -> Tokyo Disney Resort
+hong-kong-disneyland.jpg                      -> Hong Kong Disneyland
+shanghai-disney-resort.jpg                    -> Shanghai Disney Resort
+aulani-a-disney-resort.jpg                    -> Aulani, a Disney Resort
+disney-cruise-line.jpg                        -> Disney Cruise Line
+
+Si una imagen no existe, se ve un degradado con los colores de la categoría (no se rompe nada).
+Si quieres otro nombre o formato (png, webp), cámbialo en src/config/images.js (bloque "categorias").

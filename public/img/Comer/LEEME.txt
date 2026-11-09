@@ -1,0 +1,15 @@
+Imágenes de la página Dónde comer en Disneyland Paris. Guarda aquí:
+header.jpg
+tematico-1.jpg  tematico-2.jpg  tematico-3.jpg
+opcion-mesa.jpg  opcion-buffet.jpg  opcion-rapido.jpg  opcion-llevar.jpg
+reserva-icono.jpg
+village.jpg  hoteles-restaurantes.jpg  hoteles-bares.jpg
+cocina-1.jpg  cocina-2.jpg  cocina-3.jpg
+gustos.jpg
+audiodescripcion.png
+encontraras-1.jpg ... encontraras-4.jpg
+ninos-1.jpg ... ninos-6.jpg   (la 2ª es la alta del centro, la 5ª la pequeña del centro)
+personajes.jpg
+plan-1.jpg  plan-2.jpg  plan-3.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

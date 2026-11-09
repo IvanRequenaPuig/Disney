@@ -1,0 +1,91 @@
+#comer { font-family: 'Segoe UI', system-ui, sans-serif; color: #1c2340; background: #f6f6f6; overflow-x: hidden } #comer .dl-header { position: relative; box-shadow: 0 1px 0 #e5e5e5 }
+#comer a { color: #0033cc } #comer .btn-dl, #comer .btn-dl:hover { color: #fff } #comer .btn-outline-dl:hover { color: #fff }
+#comer .dl-divider { margin: 3rem 0 }
+
+/* Imagen con degradado de reserva: si falta el archivo se ve el degradado */
+.cm-ph, .cm-opt-img, .cm-mini-img, .cm-split-img { background: var(--img) center/cover no-repeat, linear-gradient(135deg, #f3a45b, #c9486f 55%, #5b3a9e) }
+
+/* ── Header (imagen con base curva) + tarjeta de pestañas ── */
+.cm-hero { position: relative; height: 370px; display: grid; place-items: center; border-radius: 0 0 50% 50% / 0 0 80px 80px; background: var(--hero) center/cover no-repeat, linear-gradient(120deg, #7a3a1c, #c9752b 50%, #3d6b3a) }
+.cm-hero::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: rgba(15, 20, 45, .25) }
+.cm-hero h1 { position: relative; color: #fff; font-weight: 800; font-size: 1.9rem; margin: 0; padding-bottom: 40px; text-shadow: 0 2px 10px rgba(0, 0, 0, .45) }
+.cm-tabs { position: relative; z-index: 2; width: min(782px, 94%); margin: -50px auto 0; background: #fff; border-radius: 8px; box-shadow: 0 2px 12px rgba(0, 0, 0, .18); display: flex; justify-content: space-around; padding: 18px 8px 10px }
+.cm-tab { flex: 1; border: 0; background: none; text-align: center; font-weight: 700; font-size: .78rem; padding: 0 8px 12px; position: relative; color: #1c2340 } .cm-tab .ic { display: block; font-size: 1.4rem; margin-bottom: 6px }
+.cm-tab::after { content: ''; position: absolute; left: 22%; right: 22%; bottom: 0; height: 3px; border-radius: 3px; background: #0a5cff; transform: scaleX(0); transition: transform .25s } .cm-tab.on::after { transform: scaleX(1) }
+.cm-tab:focus-visible, #comer .btn-dl:focus-visible, .cm-btn-o:focus-visible { outline: 3px solid #0a5cff; outline-offset: 3px }
+/* Barra fija que sustituye a la cabecera al bajar */
+.cm-sub { position: fixed; top: 0; left: 0; right: 0; z-index: 80; background: #fff; box-shadow: 0 2px 10px rgba(0, 0, 0, .18); display: flex; justify-content: center; gap: 24px; padding: 18px 10px 6px; transform: translateY(-110%); transition: transform .3s }
+.stuck .cm-sub { transform: none } .cm-sub .cm-tab { flex: none } .cm-sub .cm-tab .ic { display: none } .cm-sub .cm-tab { padding-bottom: 12px }
+
+/* ── Estructura general ── */
+.cm-sec { scroll-margin-top: 90px }
+.cm-wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px } .cm-center { text-align: center }
+.cm-intro { text-align: center; max-width: 740px; margin: 0 auto; padding: 56px 20px 0 } .cm-intro h2 { font-weight: 800; font-size: 1.45rem; margin-bottom: 10px } .cm-intro p { margin: 0 }
+.cm-h { font-weight: 800; font-size: 1.4rem; margin: 70px auto 10px; max-width: 760px } .cm-h2 { margin-top: 50px; margin-bottom: 26px } .cm-h3 { font-size: 1.2rem; margin-top: 64px; margin-bottom: 26px } .cm-narrow { max-width: 640px }
+.cm-sub2 { max-width: 720px; margin: 0 auto 30px }
+.cm-center h2.cm-h:first-child { margin-top: 10px }
+
+/* Fotos en fila */
+.cm-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0 auto 26px } .cm-trio .cm-ph { height: 330px; border-radius: 4px }
+.cm-trio.cm-tall .cm-ph { height: 330px } .cm-trio.cm-wide { max-width: 1100px; margin-left: 50%; transform: translateX(-50%); width: min(1100px, 94vw) } .cm-trio.cm-wide .cm-ph { height: 360px }
+.cm-trio, .cm-tall { width: min(1100px, 94vw); margin-left: 50%; transform: translateX(-50%) }
+
+/* Tarjetas de opciones (2 por fila) */
+.cm-opts { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 30px; align-items: stretch }
+.cm-opt { width: 288px; background: #fff; border-radius: 12px; box-shadow: 0 1px 8px rgba(0, 0, 0, .12); overflow: hidden; text-align: left; display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s } .cm-opt:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(20, 30, 90, .2) }
+.cm-opt-img { height: 157px; border-radius: 0 0 50% 50% / 0 0 22px 22px }
+.cm-opt-b { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1 } .cm-opt-b h3 { font-weight: 800; font-size: 1.1rem; margin: 0 0 10px } .cm-opt-b p { font-size: .76rem; margin: 10px 0 18px; flex: 1 }
+.cm-tag { align-self: flex-start; border: 1px solid #1c2340; border-radius: 4px; padding: 2px 8px; font-size: .68rem }
+.cm-btn-o { display: block; text-align: center; text-decoration: none; border: 1.5px solid #0033cc; border-radius: 30px; padding: .55rem .8rem; font-weight: 700; font-size: .8rem; background: #fff; transition: background .15s, color .15s } .cm-btn-o:hover { background: #0033cc; color: #fff !important }
+.cm-note { font-size: .78rem; max-width: 600px; margin: 26px auto 40px }
+
+/* Tarjetas pequeñas (imagen + texto + flecha) */
+.cm-book { display: flex; justify-content: center; margin: 24px 0 }
+.cm-minis { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 22px }
+.cm-mini { display: flex; width: 410px; max-width: 100%; text-align: left; background: #fff; border-radius: 12px; box-shadow: 0 1px 8px rgba(0, 0, 0, .12); overflow: hidden; text-decoration: none; color: inherit !important; transition: transform .2s } .cm-mini:hover { transform: scale(1.02) }
+.cm-mini-img { width: 94px; min-height: 94px; margin: 7px; border-radius: 6px; flex: none } .cm-mini-txt { padding: 10px 6px; flex: 1; font-size: .8rem; display: flex; flex-direction: column; justify-content: center } .cm-mini-txt strong { font-size: .88rem } .cm-mini-txt p { margin: 6px 0 0 }
+.cm-mini-arrow { background: #f3f3f3; color: #0033cc; display: grid; place-items: center; width: 22px; font-style: normal; font-weight: 700 }
+
+/* App móvil */
+.cm-app { background: #fff; margin-top: 60px; padding: 34px 0 40px }
+.cm-app-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 30px 0 28px; text-align: left; align-items: start } .cm-app-row > div { display: flex; flex-direction: column; gap: 6px; font-size: .9rem } .cm-app-row a { font-size: .75rem; color: #1c2340 }
+.cm-circle-img { width: 116px; height: 116px; display: block; margin-bottom: 14px }
+.cm-circle { width: 116px; height: 116px; border-radius: 50%; display: grid; place-items: center; font-size: 2.2rem; background: radial-gradient(circle at 30% 25%, #ff5a6a, #d6254a 70%); box-shadow: 0 4px 12px rgba(214, 37, 74, .3); margin-bottom: 14px }
+
+/* Valores, encontrarás, padres, plan */
+.cm-cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: left } .cm-cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; text-align: left; max-width: 760px; margin: 0 auto }
+.cm-cols4 h4, .cm-cols3 h4 { font-weight: 800; font-size: 1.02rem; margin: 14px 0 10px } .cm-cols4 p, .cm-cols3 p { font-size: .76rem; margin: 0 }
+.cm-ic { display: grid; place-items: center; width: 74px; height: 74px; border-radius: 50%; background: #e8ecfb; font-size: 2rem }
+.cm-found .cm-ph-s { height: 115px; border-radius: 3px; margin-bottom: 14px } .cm-found h4 { margin-top: 0 }
+.cm-plan { margin-bottom: 34px } .cm-plan h4 { min-height: 2.7em }
+
+/* Mensaje y bloque con imagen */
+.cm-split { display: grid; grid-template-columns: 432px 1fr; gap: 24px; align-items: center; text-align: left; margin: 56px auto 0 } .cm-split-img { height: 241px; border-radius: 8px }
+.cm-split-t h3 { font-weight: 800; font-size: 1.15rem } .cm-split-t p { font-size: .8rem } .cm-split-t .btn-dl { margin-top: 8px }
+.cm-split-p { margin-top: 20px } .cm-btn-pill { padding: .6rem 2.4rem; border-width: 1.5px }
+.cm-did { background: #fff; border: 1px solid #cfd3de; border-radius: 6px; max-width: 775px; margin: 44px auto 0; padding: 16px 26px; text-align: left } .cm-did p { margin: 4px 0 0; font-size: .85rem }
+
+/* ── ¡Tus niños se chuparán los dedos! ──
+   La imagen central (la alta) ya NO sube sobre el texto: las tres columnas empiezan a la misma altura
+   y el bloque tiene margen superior propio. Para separar más aún, sube --kgap. */
+.cm-kids { --kgap: 48px }
+.cm-kids .cm-sub2 { margin-bottom: var(--kgap) }
+.cm-kgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 920px; height: 600px; margin: 0 auto; position: relative; z-index: 0 }
+.cm-kcol { display: flex; flex-direction: column; gap: 16px; min-height: 0 } .cm-kcol .cm-ph { flex: 1; min-height: 0; border-radius: 4px }
+.cm-kmid .cm-k-tall { flex: 1.7 }
+
+/* Valoración de la página */
+.cm-rate { text-align: center; margin-top: 80px; padding: 34px 20px 60px; border-top: 1px solid #e6e6ea; max-width: 640px; margin-left: auto; margin-right: auto } .cm-rate p { font-size: 1rem; margin-bottom: 16px }
+.cm-faces { display: flex; justify-content: center; gap: 16px } .cm-face { width: 38px; height: 38px; border-radius: 50%; border: 2px solid #19b4e6; background: #fff; font-size: 1.15rem; line-height: 1; transition: transform .15s, background .15s; filter: grayscale(.6) } .cm-face:hover, .cm-face.on { transform: scale(1.18); background: #e1f6fd; filter: none } .cm-face:focus-visible { outline: 3px solid #0a5cff; outline-offset: 3px }
+.cm-thanks { margin-top: 16px; font-weight: 700 }
+
+/* ── Adaptable ── */
+@media (max-width: 992px) { .cm-cols4 { grid-template-columns: 1fr 1fr } .cm-app-row { grid-template-columns: 1fr 1fr } .cm-split { grid-template-columns: 1fr } .cm-sub { flex-wrap: wrap; gap: 6px } }
+@media (max-width: 720px) {
+  .cm-hero { height: 280px; border-radius: 0 0 50% 50% / 0 0 40px 40px } .cm-hero h1 { font-size: 1.4rem }
+  .cm-tabs { flex-wrap: wrap } .cm-tab { flex: 1 1 45%; padding-bottom: 14px }
+  .cm-trio, .cm-tall { grid-template-columns: 1fr } .cm-trio .cm-ph, .cm-trio.cm-tall .cm-ph, .cm-trio.cm-wide .cm-ph { height: 220px }
+  .cm-cols3 { grid-template-columns: 1fr } .cm-cols4 { grid-template-columns: 1fr }
+  .cm-kgrid { grid-template-columns: 1fr 1fr; height: auto } .cm-kcol { display: contents } .cm-kcol .cm-ph, .cm-kmid .cm-k-tall { height: 190px; flex: none }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }

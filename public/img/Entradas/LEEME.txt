@@ -1,0 +1,26 @@
+Guarda aquí las imágenes de esta carpeta con estos nombres:
+header.jpg
+calendario-dory.jpg
+entrada-basica.jpg
+parque-disneyland.jpg
+parque-adventure.jpg
+parque-2-1.jpg
+parque-2-2.jpg
+parque-2-3.jpg
+parque-2-4.jpg
+parque-d-1.jpg
+parque-d-2.jpg
+parque-d-3.jpg
+parque-d-4.jpg
+parque-a-1.jpg
+parque-a-2.jpg
+parque-a-3.jpg
+parque-a-4.jpg
+extra-1.jpg
+extra-2.jpg
+extra-3.jpg
+tarifa-discapacidad.jpg
+dias-visita.jpg
+hoteles-tematicos.jpg
+
+(Si cambias un nombre, actualízalo en src/config/images.js. Más info: RUTAS-IMAGENES.md)

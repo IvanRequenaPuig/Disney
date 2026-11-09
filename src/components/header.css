@@ -1,0 +1,17 @@
+/* Cabecera igual en TODAS las páginas.
+   Las páginas tienen reglas tipo "#parque a { color: azul }" que pintaban de azul los textos del menú.
+   Aquí se repiten los colores de la página de inicio con más prioridad (#root) para que se vea igual en todas. */
+#root .dl-header .mega-main a,
+#root .dl-header .mega-side a,
+#root .dl-header .mega-row a,
+#root .dl-header .mega-bottom a { color: #1c2340; }
+#root .dl-header .mega-main small { color: #9aa0b0; }
+#root .dl-header .mega-bottom a:hover { color: #0033cc; }
+#root .dl-header .mega-bottom a.more { color: #2a6df0; }
+#root .dl-header .promo, #root .dl-header .promo span, #root .dl-header .promo em { color: #fff; }
+#root .dl-header .dl-tools .dl-tool { color: #1c2340; }
+#root .dl-header .dl-tools .dl-tool:hover { color: #0033cc; }
+#root .dl-header .btn-dl, #root .dl-header .btn-dl:hover { color: #fff; }
+
+/* Bandera (SVG) del botón de idioma */
+.dl-tools .dl-language span .flag { width: 100%; height: 100%; display: block; }

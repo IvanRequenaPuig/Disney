@@ -1,0 +1,50 @@
+#entradas { font-family: 'Segoe UI', system-ui, sans-serif; color: #1c2340; background: #f6f6f6; overflow-x: hidden }
+#entradas a { color: #0033cc } #entradas .btn-dl, #entradas .btn-dl:hover { color: #fff }
+#entradas .dl-header { position: relative; box-shadow: 0 1px 0 #e5e5e5 }
+.en-hero { height: 320px; background: var(--hero) center/cover, linear-gradient(120deg, #0b2a8f, #5a2ea6 55%, #1fa7c9) }
+.en-tabs { width: min(975px, 94%); margin: 18px auto 0; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.15); display: flex; justify-content: space-around; padding: 18px 10px 12px }
+.en-tab { border: 0; background: none; text-align: center; font-weight: 700; font-size: .85rem; padding: 0 12px 10px; position: relative; color: #1c2340 } .en-tab .ic { display: block; font-size: 1.4rem; margin-bottom: 4px }
+.en-tab::after { content: ''; position: absolute; left: 30%; right: 30%; bottom: 0; height: 3px; border-radius: 3px; background: #0a5cff; transform: scaleX(0); transition: transform .25s } .en-tab.on::after { transform: scaleX(1) }
+.en-sub { position: fixed; top: 0; left: 0; right: 0; z-index: 80; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.18); display: flex; justify-content: center; gap: 24px; padding: 18px 10px 6px; transform: translateY(-110%); transition: transform .3s }
+.stuck .en-sub { transform: none } .en-sub .en-tab .ic { display: none } .en-sub .en-tab { padding-bottom: 12px }
+.en-wrap { max-width: 985px; margin: 0 auto; padding: 0 20px } .en-sec { scroll-margin-top: 90px }
+.en-h { text-align: center; font-weight: 700; font-size: 1.5rem; margin: 2.2rem 0 1rem } .en-sub2 { text-align: center; margin-top: -.5rem }
+.dias { max-width: 1312px; width: 94%; margin: 0 auto 40px; background: linear-gradient(120deg, #e8ecfb, #f8e9f1); border-radius: 20px; padding: 40px 30px; text-align: center }
+.dias h3 { font-weight: 700; font-size: 1.2rem } .dias h4 { font-weight: 700; font-size: 1.05rem; margin: 28px 0 14px }
+.dias-opts { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 22px }
+.dias-opt { width: 382px; display: flex; gap: 10px; text-align: left; background: #fff; border: 2px solid #d8d8e0; border-radius: 14px; padding: 14px 16px; position: relative; transition: all .2s }
+.dias-opt span { display: block; font-size: .8rem; color: #555; margin-top: 8px } .rad { flex: none; width: 24px; height: 24px; border: 2px solid #4a5568; border-radius: 50%; margin-top: -2px }
+.dias-opt.on { border-color: #0a40e0; background: #eef1ff } .dias-opt.on .rad { border: 7px solid #0a40e0 } .dias-opt.on::after { content: '✦'; position: absolute; right: -14px; top: -22px; font-size: 3rem; color: #e9b52f }
+.dias-perks { display: flex; justify-content: center; gap: 40px; font-size: .8rem } .dias-perks span { width: 260px }
+.dias-pane { display: none; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 26px } .dias-pane.on { display: flex }
+.pack { width: 382px; background: #fff; border-radius: 12px; padding: 8px; box-shadow: 0 1px 6px rgba(0,0,0,.1); font-size: .8rem; transition: transform .2s } .pack:hover { transform: translateY(-4px) }
+.pack-h { display: flex; align-items: center; gap: 14px; background: linear-gradient(90deg, #7d1c63, #c43a8a); color: #fff; border-radius: 8px; padding: 10px; font-size: 1.05rem; margin-bottom: 10px } .pack-h strong { flex: 1; text-align: left }
+.pack-n { background: #fff; color: #1c2340; border-radius: 6px; padding: 2px 10px; font-size: .7rem; line-height: 1.1 } .pack-n b { display: block; font-size: 1.3rem } .pack p { text-align: left; min-height: 40px }
+.split { display: grid; grid-template-columns: 1fr 480px; gap: 24px; align-items: center; margin-top: 36px } .split.rev { grid-template-columns: 480px 1fr } .split.rev .split-i { order: -1 }
+.split-t h3 { font-weight: 700; font-size: 1.3rem } .split-t p { font-size: .85rem }
+.split-i, .park-img, .basic-i, .mini-img { background: var(--img) center/cover, linear-gradient(135deg, #1b3a8a, #8a4fd0) } .split-i { height: 270px; border-radius: 10px }
+@media (max-width: 900px) { .split, .split.rev { grid-template-columns: 1fr } .en-tabs, .en-sub { flex-wrap: wrap } .dias-perks { flex-direction: column; align-items: center } }
+.vent { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px } .vent-i { height: 128px; border-radius: 12px; display: grid; place-items: center; font-size: 3rem; margin-bottom: 14px } .vent h4 { font-weight: 700; font-size: 1.1rem } .vent p { font-size: .78rem }
+@media (max-width: 900px) { .vent { grid-template-columns: 1fr 1fr } }
+.basic { display: flex; gap: 8px; background: #fff; border-radius: 12px; padding: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.1) } .basic-i { width: 375px; min-height: 210px; border-radius: 8px; flex: none } .basic-t { padding: 10px; flex: 1 } .basic-t h3 { font-weight: 700; font-size: 1.3rem } .basic-t p { font-size: .85rem }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px } .chips span { background: #ececf0; border-radius: 5px; padding: 6px 9px; font-size: .78rem }
+@media (max-width: 800px) { .basic { flex-direction: column } .basic-i { width: 100%; height: 200px } }
+.parks-banner { position: relative; display: flex; height: 478px; margin-bottom: 34px } .pb { flex: 1; background: var(--img) center/cover, linear-gradient(135deg, #5aa0e0, #c89bd8); transition: flex .6s ease }
+.pb-l { clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%); z-index: 1; margin-right: -2%} .pb-r { clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) }
+.parks-banner[data-sel="disneyland"] .pb-l { flex: 6 } .parks-banner[data-sel="disneyland"] .pb-r { flex: 1 } .parks-banner[data-sel="adventure"] .pb-l { flex: 1 } .parks-banner[data-sel="adventure"] .pb-r { flex: 6 }
+.park-tabs { position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); z-index: 3; background: #fff; border-radius: 8px; padding: 4px; box-shadow: 0 2px 10px rgba(0,0,0,.2); display: flex }
+.park-tab { border: 0; background: #fff; border-radius: 6px; padding: 14px 18px; font-size: .75rem; font-weight: 700; transition: all .2s } .park-tab.on { background: #0a40e0; color: #fff }
+.park-pane { display: none; max-width: 1000px; margin: 0 auto; padding: 50px 20px 10px; text-align: left } .park-pane.on { display: block } .park-pane h3 { text-align: center; font-weight: 700; font-size: 1.4rem; margin-bottom: 24px }
+.park-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px } .park-img { height: 130px; border-radius: 14px; margin-bottom: 10px } .park-cards strong { font-size: 1.05rem } .park-cards p { font-size: .8rem }
+@media (max-width: 900px) { .park-cards { grid-template-columns: 1fr 1fr } .parks-banner { height: 260px } }
+.extras { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center } .extras .mini { width: 330px; min-height: 180px }
+.mini { display: flex; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.12); overflow: hidden; text-decoration: none; color: inherit !important; transition: transform .2s } .mini:hover { transform: scale(1.02) }
+.mini-img { width: 104px; height: 104px; margin: 8px; border-radius: 8px; flex: none } .mini-txt { padding: 8px 4px; flex: 1; font-size: .85rem } .mini-txt p { margin: 8px 0 0 }
+.mini-arrow { background: #f3f3f3; color: #0033cc; display: grid; place-items: center; width: 22px; font-style: normal; font-weight: 700 }
+.antes { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap } .antes > div { width: 228px; font-size: .8rem } .antes-i { background: #fff; border-radius: 12px; height: 128px; display: grid; place-items: center; font-size: 3.4rem; margin-bottom: 16px } .antes h4 { font-weight: 700; font-size: 1.1rem }
+.acc { background: #fff; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,.1); margin: 40px 0 30px; overflow: hidden } .acc h4 { padding: 20px 24px; font-weight: 700; font-size: 1.05rem; margin: 0 }
+.acc-i { border-top: 1px solid #e5e5e5 } .acc-q { width: 100%; border: 0; background: none; display: flex; justify-content: space-between; align-items: center; padding: 22px 24px; font-weight: 700; font-size: .9rem; text-align: left } .acc-q b { font-size: 1.4rem; font-weight: 400 } .acc-a { padding: 0 24px 20px; font-size: .85rem }
+.en-modal { position: fixed; inset: 0; z-index: 250; background: rgba(0,0,0,.55); display: none; place-items: center } .en-modal.open { display: grid; animation: enIn .2s ease } @keyframes enIn { from { opacity: 0 } to { opacity: 1 } }
+.en-box { background: #fff; border-radius: 14px; padding: 28px; width: min(440px, 92%); position: relative } .en-box h3 { font-weight: 700; font-size: 1.15rem; margin-right: 30px } .en-box table { width: 100%; margin: 16px 0 } .en-box td { padding: 10px 0; border-bottom: 1px solid #eee } .en-box td:last-child { text-align: right; font-weight: 800 }
+.en-x { position: absolute; top: 12px; right: 14px; border: 0; background: none; font-size: 1.3rem }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }

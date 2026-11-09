@@ -1,0 +1,14 @@
+Imágenes de la página "Más del mundo Disney" (/mas-del-mundo-disney). Guarda aquí, con estos nombres exactos:
+
+hero.jpg        -> imagen del HEADER (fondo de la cabecera; recomendado 1920x700, apaisada)
+banner.jpg      -> banner del final de la página (recomendado 1600x600)
+
+Una imagen por tarjeta (recomendado 600x420):
+disney.jpg                                    -> Disney+
+musica-y-bandas-sonoras.jpg                   -> Música y bandas sonoras
+premios-oscar-de-disney.jpg                   -> Premios Óscar de Disney
+tienda-disney.jpg                             -> Tienda Disney
+curiosidades.jpg                              -> Curiosidades
+
+Si una imagen no existe, se ve un degradado con los colores de la categoría (no se rompe nada).
+Si quieres otro nombre o formato (png, webp), cámbialo en src/config/images.js (bloque "categorias").

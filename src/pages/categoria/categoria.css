@@ -1,0 +1,73 @@
+/* Páginas de categoría del menú lateral (Parques, Películas, Series...). Misma estética que la página del parque. Colores de cada categoría: --c1 / --c2 */
+#cat { font-family: 'Segoe UI', system-ui, sans-serif; color: #1b2b4b; background: #f7f7f8; overflow-x: hidden }
+#cat a { color: #0033cc } #cat .btn-dl, #cat .btn-dl:hover { color: #fff }
+
+/* Header: degradado de la categoría + imagen opcional, y selector de categorías */
+.ct-hero { position: relative; height: min(540px, 46vw); min-height: 400px; border-radius: 0 0 36px 36px; display: grid; place-items: center; text-align: center; padding: 40px 20px 120px; color: #fff; background: linear-gradient(180deg, rgba(10,16,50,.22), rgba(10,16,50,.62)), var(--img) center/cover, linear-gradient(135deg, var(--c1), var(--c2)) }
+.ct-hero-in { max-width: 920px; position: relative; z-index: 2 }
+.ct-eyebrow { display: inline-block; font-weight: 700; font-size: .76rem; letter-spacing: .14em; padding: 7px 18px; border-radius: 30px; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.45); margin-bottom: 18px; backdrop-filter: blur(4px) }
+.ct-hero h1 { font-weight: 800; font-size: clamp(1.8rem, 4.2vw, 3.2rem); line-height: 1.15; margin: 0; text-shadow: 0 4px 20px rgba(0,0,0,.45) }
+.ct-switch { position: absolute; left: 0; right: 0; bottom: 30px; display: flex; justify-content: center; padding: 0 12px; z-index: 3 }
+.ct-pills { display: flex; max-width: 100%; overflow-x: auto; background: #fff; border: 1px solid #e3e6f0; border-radius: 12px; padding: 4px; box-shadow: 0 2px 10px rgba(0,0,0,.18); scrollbar-width: none } .ct-pills::-webkit-scrollbar { display: none }
+#cat .ct-pills a { flex: none; padding: 13px 18px; font-weight: 700; font-size: .82rem; color: #1b2b4b; text-decoration: none; white-space: nowrap; border-radius: 8px; transition: background .2s }
+#cat .ct-pills a:hover { background: #eef2ff } #cat .ct-pills a.on { background: #0033cc; color: #fff }
+
+/* Tarjeta de introducción */
+.ct-intro { position: relative; z-index: 2; max-width: 1100px; width: 94%; margin: -64px auto 0; padding: 44px 36px 40px; text-align: center; border-radius: 48px; background: linear-gradient(120deg, #c9f1ff 0%, #eef2ff 48%, #ffd9ee 100%) }
+.ct-intro > p { max-width: 780px; margin: 0 auto 28px; font-size: 1.02rem }
+.ct-feats { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-bottom: 28px }
+.ct-feats > div { width: 200px; min-height: 150px; padding: 18px 14px; border: 1px solid rgba(255,255,255,.8); background: rgba(255,255,255,.5); border-radius: 14px; font-size: .84rem; transition: transform .25s, background .25s } .ct-feats > div:hover { transform: translateY(-5px); background: rgba(255,255,255,.85) }
+.ct-feats span { display: block; font-size: 2rem; margin-bottom: 12px } .ct-feats p { margin: 0 }
+#cat .ct-link { font-weight: 700; font-size: .85rem; text-decoration: none }
+
+/* Secciones y buscador */
+.ct-wrap { max-width: 1210px; margin: 0 auto; padding: 56px 20px }
+.ct-orn { display: block; width: 500px; max-width: 80%; margin: 0 auto 18px }
+.ct-h { font-weight: 800; font-size: 1.55rem; text-align: center; margin: 0 auto 26px; max-width: 900px }
+.ct-filter { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 30px }
+.ct-filter input { width: min(420px, 92%); padding: 12px 20px; border: 2px solid #d5daea; border-radius: 30px; font-size: .9rem; background: #fff; color: #1b2b4b; outline: none; transition: border-color .2s } .ct-filter input:focus { border-color: var(--c1) }
+.ct-count { font-size: .85rem; color: #5a6482 } .ct-count b { color: #1b2b4b }
+.ct-empty { display: none; text-align: center; padding: 30px 0; font-weight: 600 } .ct-empty.on { display: block }
+.ct-off { display: none !important }
+
+/* Tarjetas (rejilla) */
+.ct-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 24px }
+.ct-card { height: 100%; display: flex; flex-direction: column; border-radius: 24px; padding: 8px; background: linear-gradient(170deg, var(--c1), var(--c2)); box-shadow: 0 8px 24px rgba(30,40,100,.2); transition: transform .3s, box-shadow .3s } .ct-card:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(30,40,100,.3) }
+.ct-img { position: relative; height: 210px; border-radius: 16px 16px 0 0; margin-bottom: -2px; background: var(--img) center/cover, linear-gradient(135deg, rgba(27,43,75,.45), rgba(255,255,255,.12)) }
+.ct-num { position: absolute; top: 12px; left: 12px; background: #fff; border-radius: 30px; padding: 3px 12px; font-weight: 800; font-size: .74rem; color: #1b2b4b }
+.ct-body { flex: 1; display: flex; flex-direction: column; background: #fff; border-radius: 16px; padding: 16px 16px 20px }
+.ct-body h3 { font-weight: 800; font-size: 1.12rem; margin: 0 0 4px } .ct-body em { font-style: normal; font-weight: 700; font-size: .78rem; color: #5a6482 }
+.ct-body p { flex: 1; margin: 8px 0 0; font-size: .88rem }
+#cat .ct-body a { margin-top: 12px; font-weight: 700; font-size: .82rem; text-decoration: none }
+.ct-flash .ct-card { animation: ctFlash 2.2s ease } @keyframes ctFlash { 0%, 100% { box-shadow: 0 8px 24px rgba(30,40,100,.2) } 25%, 70% { box-shadow: 0 0 0 5px #fff, 0 0 0 11px var(--c1) } }
+
+/* Línea del tiempo (Historia de Disney) */
+.ct-tl { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: 30px }
+.ct-tl::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; margin-left: -2px; border-radius: 4px; background: linear-gradient(var(--c1), var(--c2)) }
+.ct-tl .ct-cardw { position: relative; width: calc(50% - 40px) } .ct-tl .ct-cardw.r { margin-left: auto }
+.ct-tl .ct-img { height: 170px }
+.ct-dot { position: absolute; top: 30px; width: 22px; height: 22px; border-radius: 50%; background: #fff; border: 5px solid var(--c1); box-shadow: 0 2px 8px rgba(0,0,0,.25); z-index: 2 }
+.ct-tl .ct-cardw:not(.r) .ct-dot { right: -51px } .ct-tl .ct-cardw.r .ct-dot { left: -51px }
+@media (max-width: 800px) { .ct-tl::before { left: 18px } .ct-tl .ct-cardw, .ct-tl .ct-cardw.r { width: calc(100% - 50px); margin-left: 50px } .ct-tl .ct-cardw .ct-dot, .ct-tl .ct-cardw.r .ct-dot { left: -43px; right: auto } }
+
+/* ¿Sabías que...? */
+.ct-sab { background: linear-gradient(#f7f7f8, #e5ecfb) }
+.ct-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px } @media (max-width: 900px) { .ct-3 { grid-template-columns: 1fr } }
+.ct-sabc { background: #fff; border: 1px solid #e3e6f0; border-radius: 18px; padding: 24px 22px; box-shadow: 0 2px 10px rgba(0,0,0,.08); transition: transform .25s } .ct-sabc:hover { transform: translateY(-5px) }
+.ct-sabc span { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; margin-bottom: 12px; background: linear-gradient(135deg, var(--c1), var(--c2)) }
+.ct-sabc b { display: block; font-size: 1.05rem; margin-bottom: 6px } .ct-sabc p { margin: 0; font-size: .88rem }
+
+/* Banner final */
+.ct-cta { border-radius: 40px; padding: 64px 30px; text-align: center; color: #fff; background: linear-gradient(120deg, rgba(10,16,50,.55), rgba(10,16,50,.3)), var(--img) center/cover, linear-gradient(135deg, var(--c1), var(--c2)) }
+.ct-cta h2 { font-weight: 800; font-size: 1.7rem; max-width: 720px; margin: 0 auto 12px; text-shadow: 0 2px 12px rgba(0,0,0,.35) } .ct-cta p { max-width: 640px; margin: 0 auto 26px }
+#cat .ct-btn { display: inline-block; background: #fff; color: #0033cc; font-weight: 700; font-size: .9rem; text-decoration: none; padding: 13px 28px; border-radius: 30px; transition: transform .2s, box-shadow .2s } #cat .ct-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,.3) }
+
+/* Otras categorías */
+.ct-more { background: linear-gradient(#f7f7f8, #fdd9ec); margin-bottom: 0 }
+.ct-mg { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 18px }
+#cat .ct-mc { display: flex; flex-direction: column; align-items: center; text-align: center; background: #fff; border-radius: 20px; padding: 22px 12px; text-decoration: none; color: #1b2b4b; box-shadow: 0 2px 10px rgba(0,0,0,.1); transition: transform .25s, box-shadow .25s } #cat .ct-mc:hover { transform: translateY(-6px); box-shadow: 0 12px 26px rgba(30,40,100,.22) }
+.ct-mc span { display: grid; place-items: center; width: 58px; height: 58px; font-size: 1.6rem; border-radius: 50%; margin-bottom: 12px; background: linear-gradient(135deg, var(--c1), var(--c2)) }
+.ct-mc b { font-size: .95rem } .ct-mc small { margin-top: 4px; font-size: .74rem; color: #5a6482 }
+
+.ct-rev { opacity: 0; transform: translateY(26px); transition: opacity .65s, transform .65s } .ct-rev.in { opacity: 1; transform: none }
+@media (prefers-reduced-motion: reduce) { #cat * { transition: none !important; animation: none !important } .ct-rev { opacity: 1; transform: none } }
